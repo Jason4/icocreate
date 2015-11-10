@@ -62,19 +62,29 @@ $(function() {
 		$(".wst-cart-box").hide();
 	});
 	
-	$("#wst-panel-goods").click(function(){
+	$("#wst-panel-products").click(function(){
 		$("#wst-search-type").val(1);
-		$("#wst-panel-goods").css({"background-color":"#E23C3D","border":"1px solid red","color":"#ffffff"});
-		$("#wst-panel-shop").css({"background-color":"#F3F3F3","border":"0","color":"#000000"});
+		$("#wst-panel-products").css({"background-color":"#E23C3D","border":"1px solid red","color":"#ffffff"});
+		$("#wst-panel-company").css({"background-color":"#F3F3F3","border":"0","color":"#000000"});
+		$("#wst-panel-service").css({"background-color":"#F3F3F3","border":"0","color":"#000000"});
 		$("#keyword").val("");
-		$("#keyword").attr("placeholder","搜索 商品");
+		$("#keyword").attr("placeholder","搜索 产品");
 	});
-	$("#wst-panel-shop").click(function(){
+	$("#wst-panel-company").click(function(){
 		$("#wst-search-type").val(2);
-		$("#wst-panel-shop").css({"background-color":"#E23C3D","border":"1px solid red","color":"#ffffff"});
-		$("#wst-panel-goods").css({"background-color":"#F3F3F3","border":"0","color":"#000000"});
+		$("#wst-panel-company").css({"background-color":"#E23C3D","border":"1px solid red","color":"#ffffff"});
+		$("#wst-panel-products").css({"background-color":"#F3F3F3","border":"0","color":"#000000"});
+		$("#wst-panel-service").css({"background-color":"#F3F3F3","border":"0","color":"#000000"});
 		$("#keyword").val("");
-		$("#keyword").attr("placeholder","搜索 店铺");
+		$("#keyword").attr("placeholder","搜索 企业");
+	});
+	$("#wst-panel-service").click(function(){
+		$("#wst-search-type").val(3);
+		$("#wst-panel-service").css({"background-color":"#E23C3D","border":"1px solid red","color":"#ffffff"});
+		$("#wst-panel-products").css({"background-color":"#F3F3F3","border":"0","color":"#000000"});
+		$("#wst-panel-company").css({"background-color":"#F3F3F3","border":"0","color":"#000000"});
+		$("#keyword").val("");
+		$("#keyword").attr("placeholder","搜索 服务");
 	});
 	
 	var view = $(window);
