@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2015-11-08 11:44:36
+Date: 2015-11-10 21:15:12
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -46,7 +46,7 @@ INSERT INTO `wst_ads` VALUES ('13', '49', '0', '0', '0', 'Upload/ads/2015-05/554
 INSERT INTO `wst_ads` VALUES ('14', '50', '0', '0', '0', 'Upload/ads/2015-05/554c14bd26cb0.png', '4f', '', '2015-05-08', '2016-09-08', '0', '0');
 INSERT INTO `wst_ads` VALUES ('15', '51', '0', '0', '0', 'Upload/ads/2015-05/554c1501603bb.png', '5f', '', '2015-05-08', '2016-10-31', '0', '0');
 INSERT INTO `wst_ads` VALUES ('16', '52', '0', '0', '0', 'Upload/ads/2015-05/554c15429d5ee.png', '6f', '', '2015-05-08', '2016-11-10', '0', '0');
-INSERT INTO `wst_ads` VALUES ('17', '-1', '0', '0', '0', 'Upload/ads/2015-05/554c173b5c57e.jpg', '1', '', '2015-05-08', '2016-07-31', '1', '0');
+INSERT INTO `wst_ads` VALUES ('17', '-1', '0', '0', '0', 'Upload/ads/2015-05/554c173b5c57e.jpg', '1', '', '2015-05-08', '2016-07-31', '1', '1');
 INSERT INTO `wst_ads` VALUES ('18', '-1', '0', '0', '0', 'Upload/ads/2015-05/554c176b931e8.jpg', '2', '', '2015-05-08', '2016-07-31', '2', '0');
 INSERT INTO `wst_ads` VALUES ('19', '-1', '0', '0', '0', 'Upload/ads/2015-05/554c1785e590c.jpg', '3', '', '2015-05-08', '2017-01-30', '3', '7');
 INSERT INTO `wst_ads` VALUES ('20', '-1', '0', '0', '0', 'Upload/ads/2015-05/554c179b4a408.jpg', '4', '', '2015-05-08', '2017-01-04', '4', '0');
@@ -5288,13 +5288,14 @@ CREATE TABLE `wst_log_staff_logins` (
   PRIMARY KEY (`loginId`),
   KEY `loginTime` (`loginTime`),
   KEY `staffId` (`staffId`)
-) ENGINE=MyISAM AUTO_INCREMENT=180 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=181 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wst_log_staff_logins
 -- ----------------------------
 INSERT INTO `wst_log_staff_logins` VALUES ('178', '1', '2015-06-02 22:50:57', '127.0.0.1');
 INSERT INTO `wst_log_staff_logins` VALUES ('179', '1', '2015-06-04 22:37:16', '127.0.0.1');
+INSERT INTO `wst_log_staff_logins` VALUES ('180', '1', '2015-11-10 20:27:52', '127.0.0.1');
 
 -- ----------------------------
 -- Table structure for `wst_log_user_logins`
@@ -6236,7 +6237,7 @@ CREATE TABLE `wst_staffs` (
 -- ----------------------------
 -- Records of wst_staffs
 -- ----------------------------
-INSERT INTO `wst_staffs` VALUES ('1', 'admin', '6e9bceb6e1919007b63a29907f9d9c37', '9365', 'admin', '001', 'Upload/staffs/2015-04/55306cf76bc1f.jpg', '3', '1', '1', '1', '2014-04-06 11:47:20', '2015-06-04 22:37:16', '127.0.0.1');
+INSERT INTO `wst_staffs` VALUES ('1', 'admin', '6e9bceb6e1919007b63a29907f9d9c37', '9365', 'admin', '001', 'Upload/staffs/2015-04/55306cf76bc1f.jpg', '3', '1', '1', '1', '2014-04-06 11:47:20', '2015-11-10 20:27:52', '127.0.0.1');
 INSERT INTO `wst_staffs` VALUES ('14', 'system', 'a0da805e0b77f6cc05cdf0ef6ca8caad', '2508', '系统管理员', 'sn001', null, '3', '1', '1', '1', '2014-12-20 00:13:36', null, null);
 INSERT INTO `wst_staffs` VALUES ('15', 'goodsAdmin', '1600195af828b21c1f586b1e01cb89fc', '1729', '商品管理员', 'sn001', 'Upload/staffs/2014-12/5496376a7ff89.jpg', '1', '1', '1', '1', '2014-12-21 10:58:40', null, null);
 
@@ -6262,10 +6263,10 @@ CREATE TABLE `wst_sys_configs` (
 -- ----------------------------
 -- Records of wst_sys_configs
 -- ----------------------------
-INSERT INTO `wst_sys_configs` VALUES ('1', '0', '商城名称', 'mallName', 'text', null, '', 'WSTMall开源商城', null, '1');
-INSERT INTO `wst_sys_configs` VALUES ('2', '0', '商城标题', 'mallTitle', 'text', null, null, 'WSTMall开源商城', null, '2');
-INSERT INTO `wst_sys_configs` VALUES ('3', '0', '商城描述', 'mallDesc', 'text', null, null, 'WSTMall开源商城,本地O2O商城,多商户,PHP多用户开源商城,O2O开源商城', null, '3');
-INSERT INTO `wst_sys_configs` VALUES ('4', '0', '商城关键字', 'mallKeywords', 'text', null, null, 'WSTMall开源商城,本地O2O商城,多商户,PHP多用户开源商城,O2O开源商城', '&nbsp;&nbsp;以，号分隔', '4');
+INSERT INTO `wst_sys_configs` VALUES ('1', '0', '商城名称', 'mallName', 'text', null, '', '文华同创工业云商城', null, '1');
+INSERT INTO `wst_sys_configs` VALUES ('2', '0', '商城标题', 'mallTitle', 'text', null, null, '文华同创工业云商城', null, '2');
+INSERT INTO `wst_sys_configs` VALUES ('3', '0', '商城描述', 'mallDesc', 'text', null, null, '文华同创工业云商城,智能工业4.0，智能工厂协同生产', null, '3');
+INSERT INTO `wst_sys_configs` VALUES ('4', '0', '商城关键字', 'mallKeywords', 'text', null, null, '工业云，工业云商城，智能工厂，协同生产', '&nbsp;&nbsp;以，号分隔', '4');
 INSERT INTO `wst_sys_configs` VALUES ('6', '1', '验证码显示范围', 'captcha_model', 'hidden', '管理员登录||商家加盟||商家登录||新用户注册||用户登录||留言反馈', '0,1,2,3,4,5', '0,1,2,3,4,5', null, '0');
 INSERT INTO `wst_sys_configs` VALUES ('7', '1', '验证码个数', 'captcha_len', 'hidden', null, null, '4', null, '0');
 INSERT INTO `wst_sys_configs` VALUES ('8', '1', '验证码宽度', 'captcha_width', 'hidden', null, null, '85', null, '0');
@@ -6287,10 +6288,10 @@ INSERT INTO `wst_sys_configs` VALUES ('26', '0', '授权码', 'mallLicense', 'hi
 INSERT INTO `wst_sys_configs` VALUES ('27', '0', '商城Logo', 'mallLogo', 'upload', null, null, 'Apps/Home/View/default/images/logo.png', '(建议为240x132)<br/>', '6');
 INSERT INTO `wst_sys_configs` VALUES ('28', '0', '默认图片', 'goodsImg', 'upload', null, null, 'Apps/Home/View/default/images/item-pic.jpg', '', '7');
 INSERT INTO `wst_sys_configs` VALUES ('29', '0', '底部设置', 'mallFooter', 'textarea', null, null, 'CROPYRIGHT 2013-2015 广州商淘信息科技有限公司 版权所有  电话：020-29806661&lt;br/&gt;公司邮箱：wasonteam@163.com  客服QQ:707563272  粤ICP备13014375号&lt;br/&gt;我们愿与更多中小企业一起努力，一起成功 We Success together', null, '8');
-INSERT INTO `wst_sys_configs` VALUES ('30', '0', '联系电话', 'phoneNo', 'text', null, null, '020-29806661', null, '10');
-INSERT INTO `wst_sys_configs` VALUES ('31', '0', 'QQ', 'qqNo', 'text', null, null, '707563272', null, '11');
+INSERT INTO `wst_sys_configs` VALUES ('30', '0', '联系电话', 'phoneNo', 'text', null, null, '', null, '10');
+INSERT INTO `wst_sys_configs` VALUES ('31', '0', 'QQ', 'qqNo', 'text', null, null, '', null, '11');
 INSERT INTO `wst_sys_configs` VALUES ('32', '0', '默认城市', 'defaultCity', 'other', null, null, '440100', null, '5');
-INSERT INTO `wst_sys_configs` VALUES ('33', '0', '热搜索词', 'hotSearchs', 'text', null, null, '进口水果，三文鱼，零食，牛肉，压缩袋', '以，号分隔', '12');
+INSERT INTO `wst_sys_configs` VALUES ('33', '0', '热搜索词', 'hotSearchs', 'text', null, null, '', '以，号分隔', '12');
 
 -- ----------------------------
 -- Table structure for `wst_users`

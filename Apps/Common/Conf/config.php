@@ -14,6 +14,8 @@
         'DATA_PATH_LEVEL'=>2, 
 	    'SESSION_PREFIX' => 'WSTMALL',
         'COOKIE_PREFIX'  => 'WSTMALL',
-		'LOAD_EXT_CONFIG' => 'wst_config'
+		'LOAD_EXT_CONFIG' => 'wst_config',
+		'SHOW_PAGE_TRACE' => true //页面显示 trace调试信息
+		
 	);
 ?>

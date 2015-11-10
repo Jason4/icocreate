@@ -22,6 +22,7 @@ class IndexAction extends BaseAction {
     public function toMain(){
     	$this->isLogin();
         $m = D('Index');
+		
         $weekInfo = $m->getWeekInfo();//一周动态
         $this->assign('weekInfo',$weekInfo);
         $sumInfo = $m->getSumInfo();//一周动态
