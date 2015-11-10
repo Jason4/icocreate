@@ -16,7 +16,7 @@
 				<div class="wst-clear"></div>
 			</div>
 			<div id="wst-searchbox">
-				<input id="keyword" class="wst-search-keyword" data="wst_key_search" onkeyup="getSearchInfo(this,event);" placeholder="<if condition='$searchType eq 2'>搜索 店铺<else/>搜索 商品</if>" autocomplete="off"  value="{$keyWords}">
+				<input id="keyword" class="wst-search-keyword" data="wst_key_search" onkeyup="getSearchInfo(this,event);" placeholder="<if condition='$searchType eq 2'>搜索 企业<else if condition ='$searchType eq 3'/>搜索 服务 <else/>搜索 产品</if>" autocomplete="off"  value="{$keyWords}">
 				<div id="btnsch" class="wst-search-button">搜&nbsp;索</div>
 				<div id="wst_key_search_list" style="position:absolute;top:38px;left:-1px;border:1px solid #b8b8b8;min-width:567px;display:none;background-color:#ffffff;z-index:1000;">dfdf</div>
 			</div>
